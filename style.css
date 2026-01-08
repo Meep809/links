@@ -1,0 +1,174 @@
+/* General styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+    color: #ddd;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center all text */
+}
+
+/* Menu Bar */
+.menu {
+    background-color: #333;
+    padding: 10px;
+    width: 100%; /* Make the menu full width */
+    display: flex;
+    justify-content: center; /* Center menu items */
+}
+
+.menu a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+/* Heading and Paragraph Styling */
+h1, h2 {
+    color: #00ff00;
+    text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00;
+    margin-top: 20px;
+}
+
+/* Paragraphs and Project List */
+p, ul {
+    color: #ccc;
+    font-size: 18px;
+    margin: 10px 20px; /* Padding to prevent sticking to the sides */
+}
+
+/* Project Links and List */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Link */
+a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    color: #ccc;
+    font-size: 18px;
+}
+
+hr {
+    border: 1px solid #00ff00;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Flip clock styles */
+.flip-clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.digit {
+    background-color: #333;
+    color: #00ff00;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ff00;
+    width: 40px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+/* The actual flipping effect for digits */
+.digit span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.digit.flip span {
+    transform: translateY(-100%);
+}
+
+.digit.flip span.top {
+    transform: translateY(0);
+}
+
+/* Footer clock container */
+.footer-clocks {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Align clocks to opposite sides */
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white;
+}
+
+/* Individual clock styles */
+.clock-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* UTC and local time styles */
+.digit {
+    width: 40px;
+    height: 50px;
+    background: black;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* Text above clocks */
+.clock-label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+
+.digit.flip span.bottom {
+    transform: translateY(100%);
+}
